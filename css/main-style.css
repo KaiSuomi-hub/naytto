@@ -1,0 +1,80 @@
+body {
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+/* in sass remember to put a space between property and value */
+.banner {
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.2s;
+  margin: 1px auto;
+  width: 300px;
+}
+
+button {
+  background: #359409dc;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 15px;
+  color: #000;
+}
+
+#navbar {
+  background: #728f65dc;
+}
+#navbar a {
+  color: #ffffff;
+  text-align: center;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background: #728f65dc !important;
+  border: none !important;
+  box-shadow: 4px 3px 17px 3px rgba(0, 0, 0, 0.4) !important;
+}
+
+button {
+  background: #728f65dc !important;
+  box-shadow: 4px 3px 12px 3px rgba(0, 0, 0, 0.4) !important;
+}
+
+#hidden {
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#popup {
+  max-width: 400px;
+  width: 80%;
+  max-height: 400px;
+  height: 80%;
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  margin: 20px auto;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #000000;
+}

@@ -1,0 +1,89 @@
+<!-- no-found-email.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- bootstrap jquery -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/101/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Tarkista sähköpostisi</title>
+
+    <!-- font-awesome kopioi kaikille sivuille  -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <?php
+include './header.html';
+?>
+    <br />
+
+    <br />
+    <div id="main" class="border container p-3">
+      <div id="info" class="text-center border col bg-light p-3">
+        <div
+          id="errormsg"
+          class="border col p-3 bg-white text-danger text-center"
+        >
+          <p>Antamasi sähköpostiosoitetta ei löytynyt.</p>
+        </div>
+        <br />
+        <h6>Kokeile uudelleen</h6>
+        <br />
+
+        <form
+          id="forgotpass"
+          name="forgotppass"
+          method="post"
+          action="forgotpass-exec.php"
+        >
+          <input
+            class="m-2"
+            name="email"
+            type="text"
+            class="textfield"
+            id="email"
+          />
+          <br /><br /><input
+            class="btn btn-primary"
+            type="submit"
+            name="Submit"
+            value="Submit"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

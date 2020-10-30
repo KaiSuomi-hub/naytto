@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- bootstrap jquery -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/101/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- vue fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- vuetify -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome kopioi kaikille sivuille  -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login Form</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <br />
+
+    <div id="" class="border container p-3">
+      <br />
+      <b>Login </b><br />
+      <br /><br />
+      <div id="chat" class="border row p-3 bg-light">
+        <div class="col bg-light">
+          <b>Anna käyttäjätunnus ja salasana</b>
+        </div>
+        <br />
+      </div>
+      <br />
+      <div id="class" ="border col p-3 bg-light">
+        <form
+          id="loginForm"
+          name="loginForm"
+          method="post"
+          action="login-exec2.php"
+        >
+          <table
+            width="300"
+            border="0"
+            align="center"
+            cellpadding="2"
+            cellspacing="0"
+          >
+            <tr>
+              <th width="124">Login</th>
+              <td width="168">
+                <input
+                  class="m-2 border bg-white"
+                  name="login"
+                  type="text"
+                  id="login"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Password</th>
+              <td>
+                <input
+                  class="m-2 border bg-white"
+                  name="password"
+                  type="password"
+                  id="password"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <input
+                  class="btn btn-primary"
+                  type="submit"
+                  name="Submit"
+                  value="Login"
+                /><br /><br />
+                <br />
+                <a href="./register-form.php">Register</a> |
+                <a href="./reset-password-form.php">Forgot password?</a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <!-- skrptia -->
+  </body>
+</html>
