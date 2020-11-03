@@ -12,6 +12,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- omatyyli -->
+    <link rel="stylesheet" href="./css/main-style.css" />
   <!-- bootstrap jquery -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -36,16 +38,15 @@ include './header.html';
 
 <br>
 <div id="main" class="border container p-3">
-		<div id="info" class="text-center border col p-3">
+		<div id="info" class="text-center border bg-light col p-3">
 		<h1>Kirjauduit ulos</h1>
 		</div>
 			<br><br>
-			<DIV class="text-center col border p-3">
-
-<p >&nbsp;</p>
-<h4 class="err">Kirjauduit ulos sivulta</h4>
-<p >Kirjaudu tästä sisään uudelleen <br> <a href="login-form2.php">Kirjaudu</a></p>
-</DIV>
+			<DIV class="text-center col border bg-light p-3">
+      <p >&nbsp;</p>
+          <h4 class="err">Kirjauduit ulos sivulta</h4>
+              <p >Kirjaudu tästä sisään uudelleen <br> <a href="login-form2.php">Kirjaudu</a></p>
+       </DIV>
 </div>
   <?php
 include './footer.php';

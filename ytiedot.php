@@ -26,8 +26,15 @@
 <body>
     <?php
 include './header.html';
-if ("$_COOKIE[admin]"==1){
+$check=isset($_COOKIE['admin']) ? true : false;
+if ($check){
+    if ("$_COOKIE[admin]"==1){
         include './ytiedot-edit.php';
+    }
+    else{
+                include './ytiedot-normal.php';
+
+    }
         }else{
         include './ytiedot-normal.php';
 }

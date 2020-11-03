@@ -78,3 +78,7 @@ button {
   cursor: pointer;
   color: #000000;
 }
+
+div {
+  border-radius: 10px;
+}
